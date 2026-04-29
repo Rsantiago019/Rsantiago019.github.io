@@ -3,129 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alerce Studio | Desarrollo de Software</title>
+    <title>Santiago | Software Developer & Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-[#0a0f14] text-slate-300">
 
-    <!-- Navegación -->
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <div class="text-xl font-bold tracking-tighter text-emerald-700">
-                ALERCE<span class="text-slate-500 font-light italic">STUDIO</span>
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
-                <a href="#proyectos" class="hover:text-emerald-600 transition">Proyectos</a>
-                <a href="#servicios" class="hover:text-emerald-600 transition">Servicios</a>
-                <a href="#contacto" class="px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-emerald-700 transition">Contacto</a>
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 border-b border-white/5 bg-[#0a0f14]/80 backdrop-blur-lg">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="mono text-emerald-500 font-bold text-lg">&lt;SR /&gt;</div>
+            <div class="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
+                <a href="#about" class="hover:text-emerald-400 transition">Perfil</a>
+                <a href="#expertise" class="hover:text-emerald-400 transition">Expertise</a>
+                <a href="#projects" class="hover:text-emerald-400 transition">Proyectos</a>
+                <a href="mailto:tu-email@ejemplo.com" class="text-emerald-500 border border-emerald-500/30 px-4 py-2 rounded-md hover:bg-emerald-500/10 transition">Contacto</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="pt-32 pb-16 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                Construimos soluciones <br> 
-                <span class="text-emerald-600">digitales a medida.</span>
+    <section class="relative pt-40 pb-20 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto relative z-10">
+            <span class="mono text-emerald-500 mb-4 block tracking-tighter">Software Developer & Architect @ Alerce Studio</span>
+            <h1 class="text-5xl md:text-8xl font-extrabold text-white mb-8 tracking-tight">
+                Ingeniería con <br><span class="text-emerald-500">propósito.</span>
             </h1>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
-                En Alerce Studio transformamos ideas en productos digitales robustos, escalables y con un diseño impecable.
+            <p class="text-xl text-slate-400 max-w-2xl leading-relaxed mb-12">
+                Especializado en el diseño y análisis de sistemas robustos. Enfoque en arquitectura escalable, Clean Code y soluciones orientadas a objetos.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#proyectos" class="px-8 py-4 bg-emerald-600 text-white rounded-xl font-semibold hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">Ver Portafolio</a>
-                <a href="https://alercestudio.com" class="px-8 py-4 bg-white border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 transition">Visitar Web Oficial</a>
+            <div class="flex flex-wrap gap-4">
+                <div class="px-4 py-2 glass rounded-full text-xs mono">UML & Design Patterns</div>
+                <div class="px-4 py-2 glass rounded-full text-xs mono">Software Architecture</div>
+                <div class="px-4 py-2 glass rounded-full text-xs mono">React Ecosystem</div>
+                <div class="px-4 py-2 glass rounded-full text-xs mono">OOP Specialist</div>
             </div>
         </div>
-    </header>
-
-    <!-- Proyectos (Portfolio) -->
-    <section id="proyectos" class="py-20 px-6 bg-white">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 border-l-4 border-emerald-500 pl-4">Proyectos Destacados</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
-                <!-- Proyecto 1: MJ Ferretería -->
-                <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 transition hover:shadow-xl">
-                    <div class="aspect-video bg-slate-200 flex items-center justify-center">
-                        <span class="text-slate-400 font-medium italic">Dashboard / E-commerce UI</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Landing Page & Catálogo</span>
-                        <h3 class="text-xl font-bold mt-2">MJ Ferretería</h3>
-                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Implementación de un catálogo digital responsivo con integración directa de consultas vía WhatsApp.</p>
-                        <div class="mt-4 flex gap-2">
-                            <span class="px-3 py-1 bg-white text-xs border rounded-md">React</span>
-                            <span class="px-3 py-1 bg-white text-xs border rounded-md">Tailwind</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Proyecto 2: Congreso Producción Animal -->
-                <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 transition hover:shadow-xl">
-                    <div class="aspect-video bg-slate-200 flex items-center justify-center">
-                        <span class="text-slate-400 font-medium italic">Web Platform / Events</span>
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Gestión de Eventos</span>
-                        <h3 class="text-xl font-bold mt-2">49° Congreso de Prod. Animal</h3>
-                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Plataforma institucional para la gestión de autores, inscripciones y visualización de cronogramas.</p>
-                        <div class="mt-4 flex gap-2">
-                            <span class="px-3 py-1 bg-white text-xs border rounded-md">Next.js</span>
-                            <span class="px-3 py-1 bg-white text-xs border rounded-md">Supabase</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <!-- Decoración de fondo -->
+        <div class="absolute top-0 right-0 -z-10 opacity-20">
+            <svg width="600" height="600" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#10b981" d="M44.7,-76.4C58.1,-69.2,69.2,-58.1,76.4,-44.7C83.7,-31.3,87,-15.7,85.6,-0.8C84.2,14.1,78,28.2,69.2,40.3C60.4,52.4,49,62.5,36.2,70.1C23.4,77.7,9.2,82.8,-4.6,80.1C-18.4,77.4,-31.8,66.9,-43.8,55.4C-55.8,43.9,-66.4,31.4,-72.6,17.2C-78.8,3,-80.6,-13,-75.4,-27.1C-70.2,-41.2,-58,-53.4,-44.4,-61.2C-30.8,-69,-15.4,-72.4,0.4,-73.1C16.2,-73.8,31.3,-83.5,44.7,-76.4Z" transform="translate(100 100)" />
+            </svg>
         </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="py-20 px-6 bg-slate-900 text-white">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-                <div>
-                    <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fa-solid fa-code text-2xl text-emerald-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4">Web Development</h4>
-                    <p class="text-slate-400 text-sm">Aplicaciones Full-stack con las últimas tecnologías como React y Next.js.</p>
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-24 px-6 bg-[#0d131a]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-white mb-16">Especialización Técnica</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Arquitectura -->
+                <div class="p-8 glass rounded-2xl hover:border-emerald-500/50 transition duration-500">
+                    <i class="fa-solid fa-layer-group text-3xl text-emerald-500 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Arquitectura & Análisis</h3>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Diseño de estructuras de software utilizando patrones creacionales, estructurales y de comportamiento. Análisis detallado de requisitos para sistemas escalables.
+                    </p>
                 </div>
-                <div>
-                    <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fa-solid fa-mobile-screen-button text-2xl text-emerald-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4">Mobile First</h4>
-                    <p class="text-slate-400 text-sm">Diseños pensados desde el dispositivo móvil para garantizar la mejor experiencia de usuario.</p>
+                <!-- Desarrollo -->
+                <div class="p-8 glass rounded-2xl hover:border-emerald-500/50 transition duration-500">
+                    <i class="fa-solid fa-code text-3xl text-emerald-500 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Desarrollo Core</h3>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Dominio profundo de POO (Programación Orientada a Objetos) en JavaScript. Desarrollo frontend moderno con React y gestión de estado eficiente.
+                    </p>
                 </div>
-                <div>
-                    <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                        <i class="fa-solid fa-server text-2xl text-emerald-400"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4">Sistemas de Gestión</h4>
-                    <p class="text-slate-400 text-sm">Desarrollo de ERPs e inventarios personalizados para optimizar procesos de negocio.</p>
+                <!-- Alerce Studio -->
+                <div class="p-8 glass rounded-2xl border-emerald-500/30 bg-emerald-500/5">
+                    <i class="fa-solid fa-rocket text-3xl text-emerald-500 mb-6"></i>
+                    <h3 class="text-xl font-bold text-white mb-4">Alerce Studio</h3>
+                    <p class="text-sm leading-relaxed text-slate-400">
+                        Como co-fundador, lidero la toma de decisiones técnicas y la implementación de soluciones digitales para clientes locales e internacionales.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer / Contacto -->
-    <footer id="contacto" class="py-12 border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-            <div>
-                <p class="text-sm text-slate-500">© 2026 Alerce Studio. Desarrollado en la Patagonia, Argentina.</p>
+    <!-- Proyectos -->
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-white">Sistemas Recientes</h2>
+                    <p class="text-slate-500 mt-2">Soluciones de ingeniería implementadas.</p>
+                </div>
+                <a href="https://alercestudio.com" class="text-emerald-500 text-sm font-bold uppercase tracking-widest hover:underline">Ver Alerce Studio</a>
             </div>
-            <div class="flex gap-6">
-                <a href="#" class="text-slate-400 hover:text-emerald-600 transition text-xl"><i class="fa-brands fa-github"></i></a>
-                <a href="#" class="text-slate-400 hover:text-emerald-600 transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="mailto:hola@alercestudio.com" class="text-slate-400 hover:text-emerald-600 transition text-xl"><i class="fa-solid fa-envelope"></i></a>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Card Proyecto 1 -->
+                <div class="group">
+                    <div class="aspect-video glass rounded-2xl mb-6 overflow-hidden flex items-center justify-center group-hover:border-emerald-500/50 transition">
+                        <div class="text-center">
+                            <i class="fa-solid fa-microchip text-5xl text-slate-700 group-hover:text-emerald-500/20 transition duration-500"></i>
+                            <p class="mono text-[10px] text-slate-600 mt-4 uppercase">Software Design Pattern: MVC / Observer</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Plataforma de Gestión de Congresos</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Arquitectura modular para la gestión de datos científicos, autores y flujos de revisión. Implementado con un enfoque en la integridad de datos.
+                    </p>
+                    <div class="flex gap-4 text-xs mono">
+                        <span class="text-emerald-400">#JavaScript</span>
+                        <span class="text-emerald-400">#Software_Architecture</span>
+                        <span class="text-emerald-400">#Database_Design</span>
+                    </div>
+                </div>
+
+                <!-- Card Proyecto 2 -->
+                <div class="group">
+                    <div class="aspect-video glass rounded-2xl mb-6 overflow-hidden flex items-center justify-center group-hover:border-emerald-500/50 transition">
+                        <div class="text-center">
+                            <i class="fa-solid fa-diagram-project text-5xl text-slate-700 group-hover:text-emerald-500/20 transition duration-500"></i>
+                            <p class="mono text-[10px] text-slate-600 mt-4 uppercase">Domain Driven Design (DDD) Intro</p>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">E-commerce de Suministros Industriales</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        Análisis y desarrollo de un catálogo digital optimizado para alta carga de productos y filtrado complejo. Mobile-first y orientado a conversión.
+                    </p>
+                    <div class="flex gap-4 text-xs mono">
+                        <span class="text-emerald-400">#React</span>
+                        <span class="text-emerald-400">#POO</span>
+                        <span class="text-emerald-400">#UI_UX</span>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-white/5 text-center">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-2xl font-bold text-white mb-8 italic">"Code is poetry, but architecture is the foundation."</h2>
+            <div class="flex justify-center gap-8 mb-12 text-2xl text-slate-500">
+                <a href="#" class="hover:text-emerald-500 transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-emerald-500 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:hola@alercestudio.com" class="hover:text-emerald-500 transition"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p class="mono text-[10px] uppercase tracking-[0.2em] text-slate-600">
+                Santiago @ Alerce Studio &copy; 2026 | Esquel, Patagonia
+            </p>
         </div>
     </footer>
 
