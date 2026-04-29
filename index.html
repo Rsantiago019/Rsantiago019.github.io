@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerce Studio | Desarrollo de Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navegación -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-tighter text-emerald-700">
+                ALERCE<span class="text-slate-500 font-light italic">STUDIO</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#proyectos" class="hover:text-emerald-600 transition">Proyectos</a>
+                <a href="#servicios" class="hover:text-emerald-600 transition">Servicios</a>
+                <a href="#contacto" class="px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-emerald-700 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-32 pb-16 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+                Construimos soluciones <br> 
+                <span class="text-emerald-600">digitales a medida.</span>
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
+                En Alerce Studio transformamos ideas en productos digitales robustos, escalables y con un diseño impecable.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#proyectos" class="px-8 py-4 bg-emerald-600 text-white rounded-xl font-semibold hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">Ver Portafolio</a>
+                <a href="https://alercestudio.com" class="px-8 py-4 bg-white border border-slate-200 rounded-xl font-semibold hover:bg-slate-50 transition">Visitar Web Oficial</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Proyectos (Portfolio) -->
+    <section id="proyectos" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 border-l-4 border-emerald-500 pl-4">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Proyecto 1: MJ Ferretería -->
+                <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 transition hover:shadow-xl">
+                    <div class="aspect-video bg-slate-200 flex items-center justify-center">
+                        <span class="text-slate-400 font-medium italic">Dashboard / E-commerce UI</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Landing Page & Catálogo</span>
+                        <h3 class="text-xl font-bold mt-2">MJ Ferretería</h3>
+                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Implementación de un catálogo digital responsivo con integración directa de consultas vía WhatsApp.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-white text-xs border rounded-md">React</span>
+                            <span class="px-3 py-1 bg-white text-xs border rounded-md">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2: Congreso Producción Animal -->
+                <div class="group relative overflow-hidden rounded-2xl border border-slate-100 bg-slate-50 transition hover:shadow-xl">
+                    <div class="aspect-video bg-slate-200 flex items-center justify-center">
+                        <span class="text-slate-400 font-medium italic">Web Platform / Events</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-600">Gestión de Eventos</span>
+                        <h3 class="text-xl font-bold mt-2">49° Congreso de Prod. Animal</h3>
+                        <p class="mt-2 text-slate-600 text-sm leading-relaxed">Plataforma institucional para la gestión de autores, inscripciones y visualización de cronogramas.</p>
+                        <div class="mt-4 flex gap-2">
+                            <span class="px-3 py-1 bg-white text-xs border rounded-md">Next.js</span>
+                            <span class="px-3 py-1 bg-white text-xs border rounded-md">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-20 px-6 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div>
+                    <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-code text-2xl text-emerald-400"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Web Development</h4>
+                    <p class="text-slate-400 text-sm">Aplicaciones Full-stack con las últimas tecnologías como React y Next.js.</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-mobile-screen-button text-2xl text-emerald-400"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Mobile First</h4>
+                    <p class="text-slate-400 text-sm">Diseños pensados desde el dispositivo móvil para garantizar la mejor experiencia de usuario.</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-server text-2xl text-emerald-400"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Sistemas de Gestión</h4>
+                    <p class="text-slate-400 text-sm">Desarrollo de ERPs e inventarios personalizados para optimizar procesos de negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contacto -->
+    <footer id="contacto" class="py-12 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <p class="text-sm text-slate-500">© 2026 Alerce Studio. Desarrollado en la Patagonia, Argentina.</p>
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="text-slate-400 hover:text-emerald-600 transition text-xl"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="text-slate-400 hover:text-emerald-600 transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:hola@alercestudio.com" class="text-slate-400 hover:text-emerald-600 transition text-xl"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
